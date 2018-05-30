@@ -1,0 +1,13 @@
+
+
+LocalWage(U1) => Wage(U1)
+
+isMale(U1) => Wage(U1)
+
+!isMale(U1) => !Wage(U1)
+
+isManagment(U1) => Wage(U1)
+
+isProfessional(U1) => Wage(U1)
+
+Wage(U1) inUnion(U1) & inUnion(U2) & (U1 != U2) => Wage(U2) 
